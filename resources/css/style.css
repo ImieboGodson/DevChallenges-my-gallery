@@ -17,9 +17,8 @@ body {
 
 .grid {
     display: grid;
-    gap: 2%;
+    gap: 20px;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows: 1fr;
 }
 
 img {
@@ -93,7 +92,7 @@ img {
 
 .post-gallery {
     width: 100%;
-    margin-bottom: 150px;
+    margin-bottom: 100px;
 }
 
 .photo-1 {
@@ -156,6 +155,12 @@ img {
 }
 
 @media (max-width: 600px) {
+    .grid {
+        display: grid;
+        gap: 5px;
+        grid-template-columns: repeat(6, 1fr);
+    }
+
     .profile-details {
         width: 65%;
         margin: 50px auto;
@@ -186,6 +191,10 @@ img {
     .card h3, .card p {
         font-size: 12px;
         line-height: 15px;
+    }
+
+    .post-gallery {
+        margin-bottom: 30px;
     }
 
 }
